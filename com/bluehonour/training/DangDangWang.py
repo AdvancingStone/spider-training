@@ -69,27 +69,26 @@ def parse_result(html):
         }
 
 
-'''
-    item: 要写的内容
-    path：文件路径
-    mode: w覆盖写，a追加写
-'''
-
-
 def write_item_to_file(item, path, mode):
+    """
+
+    :param item: 要写的内容
+    :param path: 文件路径
+    :param mode: w覆盖写，a追加写
+    """
     print('开始写入数据 ====> ' + str(item))
     with open(path, mode, encoding='UTF-8') as f:
         f.write(json.dumps(item, ensure_ascii=False) + '\n')
         f.close()
 
 
-'''
-    page: 页数
-    flag: 是否删除文件
-'''
-
-
 def main(page, flag):
+    """
+
+    :param page:页数
+    :param flag:是否删除文件
+    :return:
+    """
     for i in range(1, page):
         url = 'http://bang.dangdang.com/books/fivestars/01.00.00.00.00.00-recent30-0-0-1-' + str(i)
         html = request_dangdang(url)
