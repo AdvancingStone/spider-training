@@ -61,7 +61,7 @@ def parse_result(html):
             'author': author[:-1],  # 作者
             'publish_date': publisher_info_item[1].find('span').string,  # 出版时间
             'publishing_house': publisher_info_item[1].find('a').string,  # 出版社
-            'five_start_num': item.find(class_='biaosheng').find('span').string[:-1],  # 五星评分次数
+            'five_star_num': item.find(class_='biaosheng').find('span').string[:-1],  # 五星评分次数
             'original_price': price_item.find(class_='price_r').string,  # 原价
             'now_price': price_item.find(class_='price_n').string,  # 现价
             'discount': price_item.find(class_='price_s').string,  # 折扣
