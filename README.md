@@ -11,6 +11,6 @@
 ##### 5 selenium 模拟浏览器操作
 * [介绍](https://github.com/AdvancingStone/spider-training/blob/master/com/bluehonour/selenium/introduce.md)
 * [Demo](https://github.com/AdvancingStone/spider-training/blob/master/com/bluehonour/selenium/Demo.py)
-##### 5 爬虫实战
-* BeautifulSoup->[爬取当当网Top500本五星好评书籍](https://github.com/AdvancingStone/spider-training/blob/master/com/bluehonour/training/DangDangWang.py)
+##### 6 爬虫实战
+* BeautifulSoup->[爬取当当网Top500本五星好评书籍](https://github.com/AdvancingStone/spider-training/blob/master/com/bluehonour/training/dangdang_top500.py)
 * BeautifulSoup->[爬取豆瓣网Top250电影](https://github.com/AdvancingStone/spider-training/blob/master/com/bluehonour/training/douban_top250.py)
