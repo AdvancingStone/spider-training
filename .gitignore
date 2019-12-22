@@ -7,3 +7,4 @@ dist
 build
 __init__.py
 .idea
+test
