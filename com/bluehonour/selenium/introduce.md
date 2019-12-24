@@ -107,4 +107,5 @@ selenium可以模拟真实浏览器，自动化测试工具，支持多种浏览
 [https://selenium-python.readthedocs.io/](https://selenium-python.readthedocs.io/ "官方文档")
 
 #### 中文参考文档
+[https://selenium-python-zh.readthedocs.io/en/latest/](https://selenium-python-zh.readthedocs.io/en/latest/)
 [https://python-selenium-zh.readthedocs.io/zh_CN/latest/](https://python-selenium-zh.readthedocs.io/zh_CN/latest/ "中文参考文档")
