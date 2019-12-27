@@ -116,6 +116,7 @@ def next_page(cur_page, page_num):
         get_source()
 
     except TimeoutException:
+        print("超时。。。。等待。。。。继续")
         driver.refresh()
         return next_page(page_num)
 
