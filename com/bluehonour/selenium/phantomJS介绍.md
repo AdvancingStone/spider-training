@@ -18,7 +18,7 @@ https://github.com/fandsimple/chrome_copy
     `pip --default-timeout=100 install selenium==2.53.6`
 
 #### 4.代替phantomJS
-不弹出界面，实现无界面爬取(不知道为啥谷歌不行，火狐却可以)
+不弹出界面，实现无界面爬取
     
     from selenium import webdriver
     from selenium.webdriver.chrome.options import Options
@@ -29,3 +29,12 @@ https://github.com/fandsimple/chrome_copy
     options.add_argument('--disable-gpu')
     # driver = webdriver.Chrome(options=options)
     driver = webdriver.Firefox(options=options)
+
+#### 5.问题
+    selenium.common.exceptions.SessionNotCreatedException: Message: session not created: No matching capabilities found
+
+因为chrome或Firefox的驱动版本对应浏览器版本不一致，下面提供两个地址：
+http://chromedriver.storage.googleapis.com/index.html
+http://npm.taobao.org/mirrors/chromedriver/
+
+但是谷歌浏览器版本为 79.0.3945.88 的是个大坑，找不到对应的驱动程序
