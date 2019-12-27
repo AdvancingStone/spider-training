@@ -18,13 +18,14 @@ import os
 # driver.set_window_size(1400, 900)
 # driver.maximize_window()#让窗口最大化
 
-# 使用 PhantomJS 无声无息的操作各种动态网站（最新版本selenium启用）
+# 使用 PhantomJS 无声无息的操作各种动态网站（最新版本selenium弃用）
 # driver = webdriver.PhantomJS()
 
 # 使用以下三行代码可以不弹出界面，实现无界面爬取
 options = Options()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
+# options.binary_location=r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
 # 添加options参数， executable_path 可选，配置了环境变量后可省略，不然传该驱动的绝对路径
 # driver = webdriver.Chrome(executable_path='chromedriver', options=options)# 配了环境变量第一个参数就可以省了，不然传绝对路径
 driver = webdriver.Firefox(executable_path='geckodriver', options=options)  # 配了环境变量第一个参数就可以省了，不然传绝对路径
@@ -112,13 +113,11 @@ def next_page(cur_page, page_num):
             next_btn.click()
             print('获取下一页数据')
         WAIT.until(EC.text_to_be_present_in_element((By.CSS_SELECTOR, '.active > .num-btn'), str(cur_page)))
-        print('pagenum')
         get_source()
 
     except TimeoutException:
-        print(1)
-        # driver.refresh()
-        # return next_page(page_num)
+        driver.refresh()
+        return next_page(page_num)
 
 
 def main():
