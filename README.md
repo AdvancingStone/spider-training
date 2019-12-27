@@ -17,3 +17,4 @@
 * BeautifulSoup->[爬取当当网Top500本五星好评书籍](https://github.com/AdvancingStone/spider-training/blob/master/com/bluehonour/training/dangdang_top500.py)
 * BeautifulSoup->[爬取豆瓣网Top250电影](https://github.com/AdvancingStone/spider-training/blob/master/com/bluehonour/training/douban_top250.py)
 * selenium -> [爬取B站周星驰 朱茵](https://github.com/AdvancingStone/spider-training/blob/master/com/bluehonour/training/bibi_search_zhouxingchi.py)
+* BeautifulSoip->[使用多线程爬取妹子图](https://github.com/AdvancingStone/spider-training/blob/master/com/bluehonour/training/meizitu.py)
